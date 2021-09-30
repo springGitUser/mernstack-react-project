@@ -12,7 +12,7 @@ const ProductScreen = ({ match }) => {
   //Calling api to fetch single product based on ID
   useEffect(() => {
     const fetchProduct = async () => {
-      const { data } = await axios.get(`/api/product/${match.params.id}`);
+      const { data } = await axios.get(`/api/products/${match.params.id}`);
       setProduct(data);
     };
     fetchProduct();
